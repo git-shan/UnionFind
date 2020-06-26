@@ -36,11 +36,12 @@ public class Main {
         int size = 100000000;
         int opCount = 100000000;
         boolean debug = false;
-        UF1 uf1 = new UF1(size);
-        UF2 uf2 = new UF2(size);
+//        UF1 uf1 = new UF1(size);
+//        UF2 uf2 = new UF2(size);
         UF3 uf3 = new UF3(size);
         UF4 uf4 = new UF4(size);
         UF5 uf5 = new UF5(size);
+        UF6 uf6 = new UF6(size);
         double time;
 
         /*
@@ -57,6 +58,8 @@ public class Main {
         time = testUF(uf4, opCount, debug);
         System.out.println(time+"s");
         time = testUF(uf5, opCount, debug);
+        System.out.println(time+"s");
+        time = testUF(uf6, opCount, debug);
         System.out.println(time+"s");
     }
 }
