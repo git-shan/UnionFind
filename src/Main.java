@@ -33,11 +33,14 @@ public class Main {
     }
     public static void main(String[] args) {
 	// write your code here
-        int size = 1000;
-        int opCount = 1000;
+        int size = 100000000;
+        int opCount = 100000000;
         boolean debug = false;
         UF1 uf1 = new UF1(size);
         UF2 uf2 = new UF2(size);
+        UF3 uf3 = new UF3(size);
+        UF4 uf4 = new UF4(size);
+        UF5 uf5 = new UF5(size);
         double time;
 
         /*
@@ -45,9 +48,15 @@ public class Main {
         System.out.println(time+"s");
          */
 //        opCount = 10000;
-        time = testUF(uf1, opCount, debug);
+//        time = testUF(uf1, opCount, debug);
+//        System.out.println(time+"s");
+//        time = testUF(uf2, opCount, debug);
+//        System.out.println(time+"s");
+        time = testUF(uf3, opCount, debug);
         System.out.println(time+"s");
-        time = testUF(uf2, opCount, debug);
+        time = testUF(uf4, opCount, debug);
+        System.out.println(time+"s");
+        time = testUF(uf5, opCount, debug);
         System.out.println(time+"s");
     }
 }
